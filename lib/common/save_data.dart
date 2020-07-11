@@ -162,7 +162,7 @@ class DataBaseHandle {
         // 获取到数据库操作对象
         Database database = await _openArticleDataBase();
         // 根据 articleId 查询符合的数据
-        List<Map<String, dynamic>> list = await database.query(_articleTableName, where: where, whereArgs: whereArgs);
+        List<Map<String, dynamic>> list = await database.query(_articleTableName, where: where, whereArgs: whereArgs, orderBy: "selected");
 
         return list;
     }

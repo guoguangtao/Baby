@@ -13,7 +13,7 @@ class YXCNoDataWidget extends StatelessWidget {
   final GestureTapCallback onTap;
 
   YXCNoDataWidget({
-    this.imageName = 'assets/images/icon/nodata.png',
+    this.imageName = 'assets/images/icon/noData.png',
     this.desc = '暂无数据',
     this.width = 80,
     this.imageColor = const Color(0xFFF695C2),
